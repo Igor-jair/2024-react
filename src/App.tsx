@@ -41,7 +41,7 @@ const App = () => {
     },
   ]);
 
-  const escutarCliqueBotao = (evento: any) => {
+  const escutarCliqueBotao = () => {
     console.log("clicou");
     console.info(tarefa);
     const objeto = {
@@ -49,7 +49,7 @@ const App = () => {
       titulo: tarefa,
       concluido: false,
     }
-    console.info(objeto);
+    console.info(objeto)
     setTarefas([
       ...tarefas,
       objeto
